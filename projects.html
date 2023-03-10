@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>projects</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("#center").click(function(){
+                    $("h3").slideToggle(2000);
+                });
+            });
+        </script>
+        <style>
+            body
+            {
+                background-image:url(https://img.freepik.com/free-vector/abstract-watercolor-background_23-2149038179.jpg);
+            }
+            h3
+            {
+                display: none;
+                background-color:grey;
+                border: 2px solid black;
+                padding:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center" class="text-decoration-underline">ABOUT MY PROJECTS</h1>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <button id="center" type="button" class="btn btn-lg btn-info">CLICK ME</button>
+                    <br>
+                    <br>
+                    <br>
+                    <h3>The list of projects done by me are as follows
+                        <br>
+                        <ul>
+                            <li>ONLINE VOTING DATABASE MANAGEMNET SYSTEM</li>
+                            <li>ADDING CONTACTS TO THE CONTACT LIST</li>
+                        </ul>
+                        <p>The online voting database management system uses the frontend and the backend The front end uses the technologies like HTML,CSS,JAVA SCRIPT and the backend uses the SQL the connection between them is established by PHP. </p>
+                        <p>The project of adding contacts to the contact list uses the technology of JAVA which covers the over all concepts like INHERITANCE,PACKAGES,INTERFACES,MULTI THREADING,DYNAMIC METHOD DISPATCH.</p>
+
+                    </h3>
+                </div>
+            </div>
+        </div> 
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <a href="skills.html"><button type="button" class="btn btn-lg btn-info">⬅️PREVIOUS</button></a>
+                </div>
+                <div class="col-lg-5">
+                    <a href="hobbies.html"><button type="button" class="btn btn-lg btn-info">NEXT➡️</button></a>
+                </div>
+            </div>
+        </div>   
+    </body>
+</html>

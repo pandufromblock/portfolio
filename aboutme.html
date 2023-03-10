@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>aboutme</title>
+        <link rel="stylesheet" href="D:\One drive\OneDrive\Desktop\style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <style>
+            body
+            {
+                background-color: lightblue;
+                background-image:url(https://images.pexels.com/photos/628281/pexels-photo-628281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="aboutme.html"><button type="button" class="btn btn-lg btn-warning">ABOUT ME</button></a>
+                </div>
+                <div class="col-md-2">
+                    <a href="skills.html"><button type="button" class="btn btn-lg btn-warning">MY SKILLS</button></a>
+                </div>
+                <div class="col-md-2">
+                    <a href="projects.html"><button type="button" class="btn btn-lg btn-warning">PROJECTS</button></a>
+                </div>
+                <div class="col-md-2">
+                    <a href="hobbies.html"><button type="button" class="btn btn-lg btn-warning">HOBBIES</button></a>
+                </div>
+                <div class="col-md-2">
+                    <a href="contact.html"><button type="button" class="btn btn-lg btn-warning">CONTACT</button></a>
+                </div>
+                <div class="col-md-2">
+                    <a href="tips.html"><button type="button" class="btn btn-lg btn-warning">TIPS FROM ME</button></a>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="main">
+           <div class="information">
+            <div class="overlay"></div>
+            <img src="C:\Users\91949\Downloads\family3-removebg-preview.png" width="100%" height="30%" class="mobile">
+            <div id="circle">
+                <div class="feature one"> 
+                    <div>
+                        <h1>MySelf Mamatha</h1>
+                        <p>I am a B.TECH pursuing student</p>
+                        <p>My goal is to settle in a top rated MNC.</p>
+                    </div>      
+                </div>
+                <div class="feature two">
+                    <div>
+                        <h1>Father is Sourireddy</h1>
+                        <p> He is  a farmer</p>
+                        <p>He is a hard-working guy</p>
+                        <p>He is the inspiration to me.</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <div>
+                        <h1>Mother is Lakshmi</h1>
+                        <p>She is a home-maker</p>
+                        <p>she loves me very much</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <div>
+                        <h1>Brother is Ashok </h1>
+                        <p>He takes care me.</p>
+                        <p>He supports me in very situation</p>
+                        <p>He loves me more</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="controls">
+            <img src="E:\web development\a.png" id="upBtn">
+            <h3>Click up or down</h3>
+            <img src="D:\CSS\d.png" id="downBtn">
+           </div>
+        </div>
+        <script>
+            var circle=document.getElementById("circle");
+            var upBtn=document.getElementById("upBtn");
+            var downBtn=document.getElementById("downBtn");
+            var rotateValue=circle.style.transform;
+            var rotateSum;
+            upBtn.onclick=function()
+            {
+                rotateSum=rotateValue+"rotate(-90deg)";
+                circle.style.transform=rotateSum;
+                rotateValue=rotateSum;
+            }
+            downBtn.onclick=function()
+            {
+                rotateSum=rotateValue+"rotate(+90deg)";
+                circle.style.transform=rotateSum;
+                rotateValue=rotateSum;
+            }
+        </script>
+    </body>
+</html>
